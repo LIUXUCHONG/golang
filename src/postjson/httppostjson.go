@@ -8,10 +8,10 @@ import (
 )
 
 func HttpPostJson(getip string , gethostname string) {
-	url := "https://is-cmdb-test.test.gifshow.com/cmdb-web/api/v1/machine/add"
+	url := "https://"
 	method := "POST"
 
-	payload := strings.NewReader("{\"hostName\": \""+gethostname+"\",\"ip\": \""+getip+"\",\"env\":\"开发环境\",\"machineRoom\":\"DZ\",\"info\":\"\",\"label\":\"k8s\",\"user\":\"刘绪冲\"}")
+	payload := strings.NewReader("{\"hostName\": \""+gethostname+"\",\"ip\": \""+getip+"\",\"env\":\"开发环境\",\"machineRoom\":\"DZ\",\"info\":\"\",\"label\":\"k8s\",\"user\":\"zhangsan\"}")
 
 	client := &http.Client {
 	}
